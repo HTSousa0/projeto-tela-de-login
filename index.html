@@ -15,31 +15,28 @@
 <body>
     <main>
         <section id="login">
-                <div id="imagem">
-                    Foto
-                </div>
-                    <h1>Login</h1>
-                    <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e pode fazer as configurações no
-                        seu ambiente</p>
-                     <form action="cadastro.js" method="post">
-                        
-                     </form>
-                    <label for="iemail">
+            <div id="imagem">
+                Foto
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta.
+                    ambiente</p>
+                <form action="cadastro.js" method="post">
+                    <div class="campo">
                         <span class="material-symbols-outlined">person</span>
-                    </label>
-                    <input type="text" name="email" id="iemail" required size="30" placeholder="Seu e-mail">
-                </div>
-                <p>
-                    <label for="isenha">
+                        <input type="text" name="email" id="iemail" required maxlength="30" placeholder="Seu e-mail">
+                        <label for="iemail">Login</label> </label>
+                    </div>
+                    <div class="campo">
                         <span class="material-symbols-outlined">key</span>
-                    </label>
-                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" size="8"
-                        autocomplete="new-password" placeholder="Sua senha">
-                </p>
-                <input type="submit" value="Entrar">
-                <input type="submit" value="Esqueci minha senha">
-            </form>
-            <div></div>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" autocomplete="new-password" placeholder="Sua senha">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao"> Esqueci minha senha </a>
+                </form>
+            </div>
         </section>
     </main>
 
